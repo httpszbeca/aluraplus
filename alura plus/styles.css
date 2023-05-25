@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --font-button: 'Inter', sans-serif;
+    --botao-azul-efeito: #5fa4f9; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
+
+.principal {
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.botao {
+    background-color: var(--botao-azul);
+    text-decoration: none;
+    color: var(--branco-principal);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-family: var(--font-button);
+    display: block;
+    margin-bottom: 1em;
+}
+.botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+.botao_botao {
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-family: var(--font-button);
+    font-size: 1rem;
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: block;
+    border: 1px solid var(--branco-principal);
+}
+
+.botao_botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+.parte {
+    margin: 0 6em;
+}
+
+
+.parte h1 {
+    font-family: var(--font-button);
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.parte p {
+    font-size: 0.75rem;
+    font-family: var(--font-button);
+    color: var(--cinza-secundario);
+}
+
+.parte img {
+    margin: 1em 0 2em 0;
+}
+
+.secundario img {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+    padding: 2em;
+}
+
+.parte2 h2 {
+    font-family: var(--font-button);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.parte2 p {
+    font-size: 1rem;
+    font-family: var(--font-button);
+    color: var(--cinza-secundario);
+}
+
+.segundario_botao {
+    display: inline-block;
+    margin-top: 1rem;    
+}
+
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos h2 {
+    font-family: var(--font-button);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.lista__item {
+    font-family: var(--font-button);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.rodape {
+    text-align: center;
+}
+
+.rodape__lista {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.lista__link a {
+    margin: 0.5rem 0.5rem;
+    color: var(--branco-principal);
+    font-family: var(--font-button);
+    text-decoration: none;
+}
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: var(--branco-principal);
+}
+
+.rodape__texto {
+    margin: 1rem 1rem;
+    font-family: var(--font-button);
+    font-size: 0.75rem;
+    color: var(--cinza-secundario);
+}
+
